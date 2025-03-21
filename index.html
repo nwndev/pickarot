@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/695b6357ac.js" crossorigin="anonymous"></script>
+    <title>Daily Tarot Pick</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <a class="logo" id="home">Pickarot</a>
+        <div id="card-display" class="card card3d" onclick="pickCard()">
+            <img src="images/CardBacks.jpg" style="width: 60%; height: auto; box-shadow: 0px 14px 29px -9px rgba(0,0,0,0.75);">
+        </div>
+        <div id="result" class="hidden">
+            <div id="result-card" class="result-card">
+                <img id="result-image" style="box-shadow: 0px 14px 29px -9px rgba(0,0,0,0.75);" src="" alt="">
+                <div class="result-text">
+                    <h2 id="result-name">
+                        <span id="result-name-text" class="editorial"></span>
+                        <span id="result-no" class="small-text"></span>
+                    </h2>
+                    <p id="result-desc" style="font-size: 150%;"></p>
+                    <blockquote id="result-quote" class="quote" style="font-style: italic;"></blockquote>
+                </div>
+            </div>
+            <button id="pick-again" class="pick-again" onclick="pickCard()">Pick Again <i class="fa-solid fa-shuffle"></i></button>
+        </div>
+    </div>
+    <div id="warning-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Warning</h2>
+            <p>There may be some inappropriate images. Please decide if you want to proceed. Once you proceed, you will not see this message again.</p>
+            <button id="proceed-button" class="proceed" onclick="proceed()">Proceed <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Dibuat dengan <i class="fa-solid fa-heart" style="color:#f7e994;"></i> oleh yoyo &#8226 <a href="https://github.com/nwndev" class="links">sources</a> <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

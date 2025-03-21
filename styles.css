@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: "Editorial";
+    src: url("./fonts/Editorial.otf");
+}
+
+body {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #252525;
+    color: rgb(107, 107, 107);
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.pick-again {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(77, 77, 77);
+    border: none;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    transition: 0.3s color;
+}
+
+.pick-again:hover {
+    color: rgb(126, 126, 126);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.modal-content {
+    background-color: #252525;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+
+.modal.show {
+    display: block;
+    opacity: 1;
+}
+
+.modal-content.show {
+    transform: scale(1);
+}
+
+.close {
+    color: rgb(77, 77, 77);
+    float: right;
+    font-size: 28px;
+    transition: 0.3s color;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.proceed {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(238, 65, 65);
+    border: none;
+    border-radius: 5px;
+    background: none;
+    outline: none;
+    border: none;
+    transition: 0.3s color;
+}
+
+.proceed:hover {
+    color: rgb(179, 42, 42);
+}
+
+.editorial {
+    font-family: "Editorial";
+    font-size: 200%;
+    color: #f7e994;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 100px;
+    height: auto;
+    color: rgb(107, 107, 107);
+    font-size: 150%;
+    font-family: "Editorial";
+}
+
+.links {
+    color: rgb(77, 77, 77);
+    transition: 0.2s color;
+}
+
+.links:hover {
+    color: #f7e994
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+#container {
+    text-align: center;
+}
+
+.card3d {
+    margin: 4px;
+    transform: scale(1);
+    perspective: 600px;
+  }
+  
+  .card3d.hidden {
+    display: none;
+  }
+  
+  .card3d:hover {
+    z-index: 10;
+  }
+  
+  .card3d,
+  .card3d img {
+    transition: all 250ms ease-out;
+  }
+
+.card {
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+
+.result-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.result-card img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.result-text {
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+#pick-again {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.quote {
+    position: relative;
+    padding-left: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+.quote::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #666;
+}
+
+#card-display, #result {
+    transition: opacity 0.5s ease;
+}
+
+#result {
+    opacity: 0;
+}
+
+.small-text {
+    font-size: 0.7em;
+    color: #252525;
+    background-color: #f7e994;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-left: 3px;
+    line-height: 1.5;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}

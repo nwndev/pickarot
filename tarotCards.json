@@ -1,0 +1,200 @@
+[
+    {
+        "the_fool": {
+            "name": "The Fool",
+            "no": "0",
+            "desc": "New beginnings, adventures, and spontaneity.",
+            "quote": "Embrace the unknown with an open heart.",
+            "image": "images/00-TheFool.jpg"
+        }
+    },
+    {
+        "the_magician": {
+            "name": "The Magician",
+            "no": "I",
+            "desc": "Manifestation, resourcefulness, and power.",
+            "quote": "You have all the tools you need to succeed.",
+            "image": "images/01-TheMagician.jpg"
+        }
+    },
+    {
+        "the_high_priestess": {
+            "name": "The High Priestess",
+            "no": "II",
+            "desc": "Intuition, unconscious knowledge, and mystery.",
+            "quote": "Trust your intuition; it knows the way.",
+            "image": "images/02-TheHighPriestess.jpg"
+        }
+    },
+    {
+        "the_empress": {
+            "name": "The Empress",
+            "no": "III",
+            "desc": "Fertility, femininity, beauty, and nature.",
+            "quote": "Nurture your creativity and embrace abundance.",
+            "image": "images/03-TheEmpress.jpg"
+        }
+    },
+    {
+        "the_emperor": {
+            "name": "The Emperor",
+            "no": "IV",
+            "desc": "Authority, structure, control, and fatherhood.",
+            "quote": "Establish order and take charge of your life.",
+            "image": "images/04-TheEmperor.jpg"
+        }
+    },
+    {
+        "the_hierophant": {
+            "name": "The Hierophant",
+            "no": "V",
+            "desc": "Tradition, conformity, and spiritual guidance.",
+            "quote": "Seek wisdom from established sources.",
+            "image": "images/05-TheHierophant.jpg"
+        }
+    },
+    {
+        "the_lovers": {
+            "name": "The Lovers",
+            "no": "VI",
+            "desc": "Love, harmony, and partnership.",
+            "quote": "Embrace love and connection with others.",
+            "image": "images/06-TheLovers.jpg"
+        }
+    },
+    {
+        "the_chariot": {
+            "name": "The Chariot",
+            "no": "VII",
+            "desc": "Determination, willpower, and control.",
+            "quote": "Harness your willpower to achieve your goals.",
+            "image": "images/07-TheChariot.jpg"
+        }
+    },
+    {
+        "strength": {
+            "name": "Strength",
+            "no": "VIII",
+            "desc": "Courage, bravery, and inner strength.",
+            "quote": "Face challenges with courage and confidence.",
+            "image": "images/08-Strength.jpg"
+        }
+    },
+    {
+        "the_hermit": {
+            "name": "The Hermit",
+            "no": "IX",
+            "desc": "A time for introspection and inner guidance.",
+            "quote": "Seek the truth within yourself.",
+            "image": "images/09-TheHermit.jpg"
+        }
+    },
+    {
+        "wheel_of_fortune": {
+            "name": "Wheel of Fortune",
+            "no": "X",
+            "desc": "Cycles, change, and destiny.",
+            "quote": "Embrace the cycles of life; they bring growth.",
+            "image": "images/10-WheelOfFortune.jpg"
+        }
+    },
+    {
+        "justice": {
+            "name": "Justice",
+            "no": "XI",
+            "desc": "Fairness, truth, and law.",
+            "quote": "Seek fairness and balance in all situations.",
+            "image": "images/11-Justice.jpg"
+        }
+    },
+    {
+        "the_hanged_man": {
+            "name": "The Hanged Man",
+            "no": "XII",
+            "desc": "Sacrifice, release, and new perspectives.",
+            "quote": "Let go to gain a new perspective.",
+            "image": "images/12-TheHangedMan.jpg"
+        }
+    },
+    {
+        "death": {
+            "name": "Death",
+            "no": "XIII",
+            "desc": "Transformation, endings, and new beginnings.",
+            "quote": "Embrace change; it leads to new opportunities.",
+            "image": "images/13-Death.jpg"
+        }
+    },
+    {
+        "temperance": {
+            "name": "Temperance",
+            "no": "XIV",
+            "desc": "Balance, moderation, and harmony.",
+            "quote": "Find balance in all aspects of your life.",
+            "image": "images/14-Temperance.jpg"
+        }
+    },
+    {
+        "the_devil": {
+            "name": "The Devil",
+            "no": "XV",
+            "desc": "Addiction, materialism, and playfulness.",
+            "quote": "Confront your fears and break free from chains.",
+            "image": "images/15-TheDevil.jpg"
+        }
+    },
+    {
+        "the_tower": {
+            "name": "The Tower",
+            "no": "XVI",
+            "desc": "Sudden upheaval, chaos, and revelation.",
+            "quote": "Embrace the change; it clears the way for new growth.",
+            "image": "images/16-TheTower.jpg"
+        }
+    },
+    {
+        "the_star": {
+            "name": "The Star",
+            "no": "XVII",
+            "desc": "Hope, inspiration, and serenity.",
+            "quote": "Trust in the universe; brighter days are ahead.",
+            "image": "images/17-TheStar.jpg"
+        }
+    },
+    {
+        "the_moon": {
+            "name": "The Moon",
+            "no": "XVIII",
+            "desc": "Illusion, fear, and the subconscious.",
+            "quote": "Explore the depths of your intuition.",
+            "image": "images/18-TheMoon.jpg"
+        }
+    },
+    {
+        "the_sun": {
+            "name": "The Sun",
+            "no": "XIX",
+            "desc": "Joy, success, and positivity.",
+            "quote": "Radiate positivity and embrace your true self.",
+            "image": "images/19-TheSun.jpg"
+        }
+    },
+    {
+        "judgment": {
+            "name": "Judgment",
+            "no": "XX",
+            "desc": "Reflection, reckoning, and awakening.",
+            "quote": "Embrace your calling and rise to new challenges.",
+            "image": "images/20-Judgement.jpg"
+        }
+    },
+    {
+        "the_world": {
+            "name": "The World",
+            "no": "XXI",
+            "desc": "Completion, fulfillment, and harmony.",
+            "quote": "Celebrate your achievements and embrace the journey.",
+            "image": "images/21-TheWorld.jpg"
+        }
+    }
+]
