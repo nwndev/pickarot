@@ -61,6 +61,30 @@ function showModal() {
 
 const refreshBtn = document.getElementById("home");
 
+
+function shareImage() {
+  const image = document.getElementById('result-image').src; 
+  const link = document.createElement('a'); 
+  link.href = image; 
+  link.download = 'tarot_card.png'; 
+  document.body.appendChild(link); 
+  link.click(); 
+  document.body.removeChild(link); 
+
+  
+  const downloadMessage = document.getElementById('download-message');
+  downloadMessage.style.display = 'block'; 
+  downloadMessage.style.opacity = '1'; 
+
+  
+  setTimeout(() => {
+      downloadMessage.style.opacity = '0'; 
+      setTimeout(() => {
+          downloadMessage.style.display = 'none'; 
+      }, 500); 
+  }, 2000); 
+}
+
 function handleClick() {
   window.location.reload();
 }
@@ -125,3 +149,50 @@ function map(val, minA, maxA, minB, maxB) {
       img.style.filter = 'brightness(1)';
     });
   });
+
+// Create the custom cursor element
+const cursor = document.createElement('div');
+cursor.classList.add('custom-cursor');
+document.body.appendChild(cursor);
+
+// Update the cursor position based on mouse movement
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = `${e.pageX}px`;
+    cursor.style.top = `${e.pageY}px`;
+});
+
+// Change cursor size on button hover
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(button => {
+    button.addEventListener('mouseenter', () => {
+        cursor.style.width = '15px'; // Smaller size on hover
+        cursor.style.height = '15px'; // Smaller size on hover
+    });
+
+    button.addEventListener('mouseleave', () => {
+        cursor.style.width = '20px'; // Default size
+        cursor.style.height = '20px'; // Default size
+    });
+
+    button.addEventListener('mousedown', () => {
+        cursor.style.width = '10px'; // Even smaller size on click
+        cursor.style.height = '10px'; // Even smaller size on click
+    });
+
+    button.addEventListener('mouseup', () => {
+        cursor.style.width = '15px'; // Return to smaller size after click
+        cursor.style.height = '15px'; // Return to smaller size after click
+    });
+});
+
+// Reset cursor size when clicking anywhere else
+document.addEventListener('mousedown', () => {
+    cursor.style.width = '10px'; // Smaller size on click
+    cursor.style.height = '10px'; // Smaller size on click
+});
+
+document.addEventListener('mouseup', () => {
+    cursor.style.width = '20px'; // Return to default size
+    cursor.style.height = '20px'; // Return to default size
+});

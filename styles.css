@@ -16,6 +16,18 @@ body {
     background-color: #252525;
     color: rgb(107, 107, 107);
     margin: 0;
+    cursor: none;
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f7e994;
+    pointer-events: none;
+    transition: width 0.2s ease, height 0.2s ease;
+    z-index: 10000;
 }
 
 ::-webkit-scrollbar {
@@ -26,13 +38,16 @@ body.modal-open {
     overflow: hidden;
 }
 
+button {
+    cursor: none;
+}
+
 .pick-again {
     font-family: "Space Mono", serif;
     font-weight: 400;
     font-style: normal;
     padding: 10px 20px;
     font-size: 16px;
-    cursor: pointer;
     color: rgb(77, 77, 77);
     border: none;
     border-radius: 5px;
@@ -91,7 +106,6 @@ body.modal-open {
 .close:focus {
     color: rgb(126, 126, 126);
     text-decoration: none;
-    cursor: pointer;
 }
 
 .proceed {
@@ -100,7 +114,6 @@ body.modal-open {
     font-style: normal;
     padding: 10px 20px;
     font-size: 16px;
-    cursor: pointer;
     color: rgb(238, 65, 65);
     border: none;
     border-radius: 5px;
@@ -134,6 +147,7 @@ body.modal-open {
 .links {
     color: rgb(77, 77, 77);
     transition: 0.2s color;
+    cursor: none;
 }
 
 .links:hover {
@@ -164,6 +178,27 @@ body.modal-open {
   .card3d.hidden {
     display: none;
   }
+
+  ::selection {
+    color: #252525;
+    background-color: #f7e994;
+    text-shadow: none;
+}
+
+.download-message {
+    display: none;
+    position: absolute;
+    background-color: #f7e994;
+    color: #252525;
+    padding: 10px;
+    border-radius: 5px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
   
   .card3d:hover {
     z-index: 10;
@@ -177,7 +212,6 @@ body.modal-open {
 .card {
     padding: 20px;
     margin: 20px;
-    cursor: pointer;
     transition: opacity 0.5s ease;
 }
 
