@@ -5,6 +5,12 @@
     src: url("./fonts/Editorial.otf");
 }
 
+@media (max-width: 768px) {
+    .custom-cursor {
+        display: none;
+    }
+}
+
 body {
     font-family: "Space Mono", monospace;
     font-weight: 400;
